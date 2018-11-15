@@ -1,12 +1,12 @@
 spring:
   application:
-    name: microservice-discovery-eureka-ha
+    name: microservice-discovery-eureka
   security:
     user:
       name: nsk
       password: abcd1234
-server:
-  port: 8764
+#server:
+#  port: 8764
 eureka:
   client:
     register-with-eureka: false
@@ -18,8 +18,8 @@ eureka:
 #profiles = peer1时配置信息
 spring:
   profiles: peer1
-server:
-  port: 8761
+#server:
+#  port: 8761
 eureka:
   instance:
     hostname: peer1
@@ -30,8 +30,8 @@ eureka:
 # profiles = peer2时配置信息
 spring:
   profiles: peer2
-server:
-  port: 8762
+#server:
+#  port: 8762
 eureka:
   instance:
     hostname: peer2
